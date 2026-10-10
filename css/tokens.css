@@ -1,0 +1,5 @@
+/* Design tokens: light, dark (auto and manual), radii and line weight */
+:root{--bg:#e5e8db;--card:#f3f1e6;--ink:#0f1a1f;--mute:#56625f;--line:#cdd3c3;--track:#d9dfcd;--acc:#b9533f;--good:#235b4f;--mid:#c79a62;--low:#a8465a;--ong:#f3f1e6;--onm:#0f1a1f;--onl:#fff1ec;--hbg:#3a2a45;--hink:#f4ead8;--hmute:#c3b6cb;--hac:#e8b583;--barbg:#2b2035;--r:14px;--rs:8px;--ln:1.5px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1418;--card:#18212c;--ink:#f1e6d0;--mute:#9ea8a6;--line:#2a3541;--track:#222c38;--acc:#e8856a;--good:#7fc4b0;--mid:#d9a86e;--low:#e0707f;--ong:#0e1418;--onm:#0e1418;--onl:#0e1418;--hbg:#2a1f36;--barbg:#0a0f12}}
+:root[data-theme="dark"]{--bg:#0e1418;--card:#18212c;--ink:#f1e6d0;--mute:#9ea8a6;--line:#2a3541;--track:#222c38;--acc:#e8856a;--good:#7fc4b0;--mid:#d9a86e;--low:#e0707f;--ong:#0e1418;--onm:#0e1418;--onl:#0e1418;--hbg:#2a1f36;--barbg:#0a0f12}

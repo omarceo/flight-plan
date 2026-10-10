@@ -1,0 +1,14 @@
+/* Desktop layout: sidebar navigation and two-column pages */
+@media (min-width:900px){
+  body{padding-bottom:0;padding-left:220px;font-size:15px}
+  .wrap{max-width:1080px;padding:22px 28px}
+  .bar{top:0;bottom:auto;right:auto;width:220px;height:100%;flex-direction:column;justify-content:flex-start;gap:4px;padding:22px 14px}
+  .bar .brand{display:block;color:#f4edd6;font-size:24px;font-weight:700;padding:0 10px 20px;letter-spacing:.3px}
+  .bar button{flex:none;max-width:none;flex-direction:row;gap:12px;font-size:14.5px;padding:10px 12px;justify-content:flex-start}
+  .bar button:not(.on):hover{background:#ffffff14}
+  .home{grid-template-columns:400px 1fr;align-items:start;gap:26px}
+  .home .hero{position:sticky;top:22px}
+  .cols{grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  .kpi b{font-size:32px}
+  .top .brandname{display:none}
+}
