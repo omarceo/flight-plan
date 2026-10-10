@@ -18,6 +18,19 @@
 <div class="wrap" id="app"></div>
 <nav class="bar" id="nav" aria-label="Main"></nav>
 <div class="fo" id="fo" role="dialog" aria-label="Focus mode" hidden></div>
+<script>
+document.addEventListener('rendered', function () {
+  document.querySelectorAll('.top b, .bar .brand').forEach(function (el) {
+    if (el.offsetParent === null || el.querySelector('.by') || (el.nextElementSibling && el.nextElementSibling.classList.contains('by'))) return;
+    var by = document.createElement('small');
+    by.className = 'by';
+    by.textContent = 'by Omar Gebaly';
+    by.style.cssText = 'display:block;font:600 11px Manrope,sans-serif;opacity:.8;margin-top:-2px';
+    el.insertAdjacentElement(el.classList.contains('brand') ? 'beforeend' : 'afterend', by);
+  });
+});
+</script>
+
 <script src="js/core.js"></script>
 <script src="js/schedule.js"></script>
 <script src="js/views.js"></script>
